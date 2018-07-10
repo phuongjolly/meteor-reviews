@@ -1,0 +1,126 @@
+
+.custom-header {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.custom-header .top-header {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    font-size: 12px;
+}
+
+.custom-header .top-header .item {
+    margin-left: 10px;
+}
+
+.custom-header .main-header {
+    display: flex;
+    flex-flow: row;
+    border-color: rgb(225, 235, 236);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-header .main-header .left-item {
+    color: rgb(96, 105, 116);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-weight: 700;
+    align-items: center;
+}
+
+.custom-header .main-header .left-item .logo {
+    font-size: 24px;
+    color: #333;
+}
+
+.custom-header .main-header .left-item .logo:hover{
+    color: #0BB4A1;
+    cursor: pointer;
+}
+
+.custom-header .main-header .left-item .item {
+    margin-right: 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.custom-header .main-header .left-item .item:hover {
+    font-weight: 700;
+}
+
+
+.custom-header .main-header .left-item .item span {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #222222;
+}
+
+.custom-header .main-header .left-item .item i {
+    font-size: 22px;
+    color: #0BB4A1;
+}
+
+.custom-header .main-header .left-item .item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.custom-header .main-header .tool-bar {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.custom-header .main-header .tool-bar .item {
+    border: #eee 1px solid;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    background-clip: padding-box;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.custom-header .main-header .tool-bar .cart {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border: #eee 1px solid;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+@media (max-width: 630px) {
+    .custom-header .main-header .left-item {
+        padding: 5px 8px;
+    }
+
+    .custom-header .main-header .left-item .item{
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 631px) {
+    .custom-header .main-header .left-item {
+        padding: 5px 20px;
+    }
+    .custom-header .main-header .left-item .item{
+        margin-left: 20px;
+    }
+}

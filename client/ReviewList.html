@@ -1,0 +1,25 @@
+<div class="list-review">
+    <div class="page-title">
+          <span>
+          Reviews
+          </span>
+        <div class="view-button">
+            <button>
+                List View
+            </button>
+            <button class="grid-view-button">
+                Grid View
+            </button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="page-content">
+            <div class="reviews">
+            <div class="review" ng-repeat="task in $ctrl.tasks">
+                {{task.text}}
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
