@@ -14,12 +14,54 @@
     </div>
     <div class="wrapper">
         <div class="page-content">
-            <div class="reviews">
-            <div class="review" ng-repeat="task in $ctrl.tasks">
-                {{task.text}}
-
+            <div class="review" ng-repeat="review in $ctrl.reviews">
+                <div ng-if="review.image">
+                    <div class="image"
+                         ng-style="{'background-image': 'url(' + review.image + ')'}"
+                    >
+                    </div>
+                </div>
+                <div class="title">
+                    {{ review.title }}
+                    <div class="rating">
+                        stars
+                    </div>
+                </div>
+                <div class="dish-info">
+                    <span class="name">
+                      <i class="fa fa-cutlery"></i>
+                    &nbsp;
+                      {{ review.dish.type }}
+                    </span>
+                    &nbsp;&bull;&nbsp;
+                    <span class="restaurant">
+                            <i class="fa fa-building-o" ></i>
+                            &nbsp;
+                        {{ review.dish.restaurant }}
+                        </span>
+                </div>
+                <div class="content">
+                    <p>
+                        {{ review.content }}
+                    </p>
+                </div>
+                <div class="user-info">
+                    <div class="avatar">
+                        <img alt="user avatar" src={{review.user.avatar}} />
+                    </div>
+                    <div class="description">
+                        <div class="username">
+                            {{ review.user.name }}
+                        </div>
+                        <div class="time">
+                            2 days ago
+                        </div>
+                    </div>
+                    <div class="actions">
+                        Action
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>

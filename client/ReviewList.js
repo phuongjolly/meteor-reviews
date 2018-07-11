@@ -1,16 +1,28 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 import template from './ReviewList.html';
-import {Tasks} from "../api/task";
+import {Tasks, Reviews} from "../api/tasks";
 
 class ReviewListController {
   constructor($scope) {
     $scope.viewModel(this);
+    this.helpers({
+      reviews() {
+        return Reviews.find({});
+      }
+    });
     this.tasks = this.getTasks();
   }
 
+  getReviews() {
+    this.helpers({
+      reviews() {
+        return Reviews.find({});
+      }
+    });
+  }
+
   getTasks() {
-    console.log('started get tasks');
     this.helpers({
       tasks() {
         return Tasks.find({});

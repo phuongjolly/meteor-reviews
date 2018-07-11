@@ -1,7 +1,7 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 import template from './todosList.html';
-import {Tasks} from "../api/task";
+import {Tasks} from "../api/tasks";
 
 class TodosListCtrl {
   constructor($scope) {

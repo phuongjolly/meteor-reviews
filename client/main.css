@@ -2,3 +2,14 @@ body {
   padding: 10px;
   font-family: sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  top: 80px;
+}
+
+.review-rate {
+  padding: 1px;
+}

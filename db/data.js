@@ -1,4 +1,4 @@
-const reviews = [
+const reviewsData = [
   {
     name: 'abcz',
     dish: {
@@ -202,7 +202,7 @@ const reviews = [
   },
 ];
 
-const reviewsCollection = [
+const reviewsCollectionData = [
   {
     name: 'Viet Nam cuisine '
   },
@@ -218,6 +218,6 @@ const reviewsCollection = [
 ];
 
 module.exports = {
-  reviewsCollection,
-  reviews,
+  reviewsCollectionData,
+  reviewsData,
 };
